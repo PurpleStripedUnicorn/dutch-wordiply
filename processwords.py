@@ -12,7 +12,7 @@ wordlist = [line.strip() for line in file.readlines()]
 file.close()
 
 # Legal characters, intentionally does not include uppercase characters
-legalchars = "abcdefghijklmnopqstuvwxyz"
+legalchars = "abcdefghijklmnopqrstuvwxyz"
 
 # Filter words
 wordsFilter = []
