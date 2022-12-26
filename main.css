@@ -109,7 +109,7 @@ input {
 
             @media screen and (max-width: 600px) {
                 .guesstile {
-                    font-size: 0.8em;
+                    font-size: 0.95em;
                 }
                 .guesstilenew {
                     font-size: 0.6em;
