@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raad dat woord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@450&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div id="pagefill">
+        <div id="topbar">
+            <div id="wordcontainer">
+                Maak woorden die <span id="wordtoday"></span> bevatten.
+            </div>
+            <div id="timecontainer">
+                Volgende woord: <span id="timetillnext"></span>
+            </div>
+        </div>
+        <div id="maincontainer">
+            <div id="guesscontainer">
+                
+            </div>
+            <div id="maxwordcontainer">
+                Maximale woordlengte: <span id="maxlen"></span>
+            </div>
+        </div>
+        <div id="inputbar">
+            <form onsubmit="sendInWord(); return false;">
+                <input type="text" id="guessfield" autofocus>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <script src="./words.js"></script>
+    <script src="./shortwords.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
