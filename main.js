@@ -80,9 +80,9 @@ function checkWord(guess) {
 // If the word is correct, the input field will be emptied
 function sendInWord() {
     word = $("#guessfield").val()
-    if (checkWord(word)) {
+    if (checkWord(word.toLowerCase())) {
         $("#guessfield").val("");
-        addWordToList(word);
+        addWordToList(word.toLowerCase());
     }
 }
 
