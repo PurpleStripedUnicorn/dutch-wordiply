@@ -46,10 +46,27 @@ guessList = [];
 
 // Add a word to the displayed list of words
 function addWordToList(word) {
+    startpos = -1;
+    for (i = 0; i < word.length - wordToday.length; i++) {
+        correct = true;
+        for (j = 0; j < wordToday.length; j++) {
+            if (word[i + j] != wordToday[j]) {
+                correct = false;
+                break;
+            }
+        }
+        if (correct) {
+            startpos = i;
+            break;
+        }
+    }
     guessList.push(word);
     txt = "<div class=\"guess\">";
     for (i = 0; i < word.length; i++) {
-        txt += "<div class=\"guesstile guesstilenew\">";
+        txt += "<div class=\"guesstile guesstilenew";
+        if (i >= startpos && i < startpos + wordToday.length)
+            txt += " guesstileshort";
+        txt += "\">";
         txt += ("" + word.charAt(i)).toUpperCase();
         txt += "</div>";
     }

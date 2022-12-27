@@ -88,6 +88,10 @@ input {
                 transition: 0.5s;
             }
 
+            .guesstileshort {
+                background-color: #41538b;
+            }
+
             .guesstilenew {
                 background-color: transparent;
                 color: transparent;
@@ -157,7 +161,7 @@ input {
         max-width: 300px;
     }
     #inputbar input[type=text]:focus {
-        border: 2px solid #5f5;
+        border: 2px solid #41538b;
     }
 
     #inputbar input[type=submit] {
@@ -172,8 +176,9 @@ input {
         background-color: #ddd;
         color: #333;
         border-radius: 3px;
+        cursor: pointer;
     }
     #inputbar input[type=submit]:hover {
-        background-color: #2c2;
+        background-color: #5573d9;
         color: white;
     }
