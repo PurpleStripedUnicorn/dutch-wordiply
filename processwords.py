@@ -1,6 +1,6 @@
 
 SHORTWORD_LEN = [3, 4]
-SHORTWORD_MIN_APPEAR = 50
+SHORTWORD_APPEAR_RANGE = [25, 60]
 
 
 
@@ -36,7 +36,7 @@ for shortword in shortWords:
     for word in wordsFilter:
         if shortword in word:
             cur += 1
-    if cur >= SHORTWORD_MIN_APPEAR:
+    if SHORTWORD_APPEAR_RANGE[0] <= cur and cur <= SHORTWORD_APPEAR_RANGE[1]:
         shortWordsFilter.append(shortword)
 random.shuffle(shortWordsFilter)
 print("selected " + str(len(shortWordsFilter)) + " short words.")

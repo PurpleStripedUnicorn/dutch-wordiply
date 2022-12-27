@@ -4,7 +4,7 @@ const daylen = 1000 * 60 * 60 * 24;
 
 // Global time, slightly modified for time zones
 function globTime() {
-    return new Date().getTime() + 1000 * 60 * 60 * 25;
+    return new Date().getTime() + 1000 * 60 * 60 * 1;
 }
 
 // Display the time until the word of the day is updated
