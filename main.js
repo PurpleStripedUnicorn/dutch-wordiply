@@ -47,7 +47,7 @@ guessList = [];
 // Add a word to the displayed list of words
 function addWordToList(word) {
     startpos = -1;
-    for (i = 0; i < word.length - wordToday.length; i++) {
+    for (i = 0; i < word.length - wordToday.length + 1; i++) {
         correct = true;
         for (j = 0; j < wordToday.length; j++) {
             if (word[i + j] != wordToday[j]) {
